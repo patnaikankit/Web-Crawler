@@ -9,7 +9,7 @@ test('normalizeURL strip protocol', () => {
 })
 
 test('normalizeURL strip trailing slash', () => {
-    const input = 'https://boot.dev/path'
+    const input = 'https://boot.dev/path/'
     const actual = normalizeURL(input)
     const expected = 'boot.dev/path'
     expect(actual).toEqual(expected)
